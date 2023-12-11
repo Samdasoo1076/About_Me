@@ -1,0 +1,40 @@
+.draggable-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .draggable {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    cursor: grab;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .draggable.f1 {
+    background-color: lightgreen;
+  }
+  
+  .draggable.f2 {
+    background-color: lightcoral;
+  }
+  
+  .draggable.f3 {
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .scrollable-content {
+    white-space: normal;
+    overflow: auto;
+    max-height: 100%;
+    flex-grow: 1;
+  }

@@ -3,128 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Draggable Elements with Scrollable Content</title>
-  <style>
-    .draggable-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 2px solid #ccc;
-      overflow: hidden;
-      background: black;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .draggable {
-      width: 500px;
-      height: 200px;
-      background-color: lightblue;
-      position: absolute;
-      cursor: grab;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    .draggable.f1 {
-      background-color: lightgreen;
-    }
-
-    .scrollable-content {
-      white-space: normal;
-      overflow: auto;
-      max-height: 100%;
-      flex-grow: 1;
-    }
-  </style>
+  <link rel="shortcut icon" type="image/x-icon" href="picture/Samdasoo.png">
+  <title>자기 소개</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="draggable-container" id="draggableContainer">
-  <div class="draggable" id="myElement" draggable="true">Drag me!
+  <div class="draggable" id="myElement" draggable="true">이스트에그
     <div class="scrollable-content" id="scrollableContent">
-      <!-- Your scrollable content goes here -->
+      <!-- 예비용 -->
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet vestibulum felis. In hac habitasse platea dictumst.</p>
       <p>Integer sed tristique ligula. Vestibulum aliquam euismod velit vitae interdum. Donec sit amet magna a augue lobortis efficitur.</p>
       <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
-      <!-- Add more content as needed -->
+      
     </div>
   </div>
-  <div class="draggable f1" id="f1Element" draggable="true">F1
+  <div class="draggable f1" id="f1Element" draggable="true"> <a>이지민</a>
     <div class="scrollable-content" id="scrollableContentF1">
-      <!-- Your scrollable content for F1 goes here -->
+      <!-- 이지민의 표현할 컨텐츠 -->
       <p>F1 Content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet vestibulum felis. In hac habitasse platea dictumst.</p>
       <p>Integer sed tristique ligula. Vestibulum aliquam euismod velit vitae interdum. Donec sit amet magna a augue lobortis efficitur.</p>
       <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
-      <!-- Add more content as needed -->
+      <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
+      <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
+
+    </div>
+  </div>
+  <div class="draggable f2" id="f2Element" draggable="true"> <a>외부 링크</a>
+    <div class="scrollable-content" id="scrollableContentF2">
+      <!-- 외부링크의 표현할 컨텐츠 -->
+      <table class="logo_table">
+        <tr>
+          <td class="td1"><a href = "https://www.instagram.com/leejimin2134/"><img src = "picture/instagram.png" class ="instagram"></a></td>
+          <td><p class="instagram_text">인스타 주소입니다.</p></td>
+          </tr>
+
+          <tr>
+          <td class="td1"><a href = "https://github.com/Samdasoo1076"><img src="picture/github.png" class ="github"></a></td>
+          <td><p class="github_text">제가 했던 작업물들을 올리는 곳입니다.</p></td>
+          </tr>
+
+          <tr>
+            <td class="td1"><a href = "https://github.com/Samdasoo1076/Obsidian"><img src ="picture/obsidian.png" class ="obsidian"></a></td>
+            <td><p class="obsidian_text">꾸준히 개발일지를 올리는 중입니다.</p></td>
+          </tr>
+        </table>
+
+      <p>qweqweqwe</p>
+      <p>qweqweqwe</p>
+      <p>qweqweqwe</p>
+      <p>qweqweqwe</p>
+      <p>qweqweqwe</p>
+      <p>qweqweqwe</p>
+      <p>qweqweqwe</p>
+      <p>qweqweqwe</p>
+      <p>qweqweqwe</p>
+
+     
+    </div>
+  </div>
+  <div class="draggable f3" id="f3Element" draggable="true"><a>본문</a>
+    <div class="scrollable-content" id="scrollableContentF3">
+      <!-- 본문에 표현할 컨텐츠 -->
+      <p>F3 Content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet vestibulum felis. In hac habitasse platea dictumst.</p>
+      <p>Integer sed tristique ligula. Vestibulum aliquam euismod velit vitae interdum. Donec sit amet magna a augue lobortis efficitur.</p>
+      <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
+      <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
+      <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
+      
     </div>
   </div>
 </div>
 
-<script>
-  let isDragging = false;
-  let offsetX = 0;
-  let offsetY = 0;
-  const element = document.getElementById('myElement');
-  const elementF1 = document.getElementById('f1Element');
-  const scrollableContent = document.getElementById('scrollableContent');
-  const scrollableContentF1 = document.getElementById('scrollableContentF1');
-
-  function handleDragStart(e, targetElement) {
-    isDragging = true;
-    offsetX = e.clientX - targetElement.getBoundingClientRect().left;
-    offsetY = e.clientY - targetElement.getBoundingClientRect().top;
-    targetElement.style.cursor = 'grabbing';
-  }
-
-  function handleDragMove(e, targetElement, targetScrollableContent) {
-    if (isDragging) {
-      const x = e.clientX - offsetX;
-      const y = e.clientY - offsetY;
-      targetElement.style.left = `${x}px`;
-      targetElement.style.top = `${y}px`;
-    }
-  }
-
-  function handleDragEnd(targetElement) {
-    isDragging = false;
-    targetElement.style.cursor = 'grab';
-  }
-
-  function handleMouseLeave(targetElement) {
-    if (isDragging) {
-      isDragging = false;
-      targetElement.style.cursor = 'grab';
-    }
-  }
-
-  function handleDoubleClick(targetElement) {
-    targetElement.style.left = '0';
-    targetElement.style.top = '0';
-    offsetX = 0;
-    offsetY = 0;
-  }
-
-  function handleWheelScroll(e, targetScrollableContent) {
-    targetScrollableContent.scrollTop += e.deltaY;
-  }
-
-  element.addEventListener('mousedown', (e) => handleDragStart(e, element));
-  element.addEventListener('mousemove', (e) => handleDragMove(e, element, scrollableContent));
-  element.addEventListener('mouseup', () => handleDragEnd(element));
-  element.addEventListener('mouseleave', () => handleMouseLeave(element));
-  element.addEventListener('dblclick', () => handleDoubleClick(element));
-  element.addEventListener('wheel', (e) => handleWheelScroll(e, scrollableContent));
-
-  elementF1.addEventListener('mousedown', (e) => handleDragStart(e, elementF1));
-  elementF1.addEventListener('mousemove', (e) => handleDragMove(e, elementF1, scrollableContentF1));
-  elementF1.addEventListener('mouseup', () => handleDragEnd(elementF1));
-  elementF1.addEventListener('mouseleave', () => handleMouseLeave(elementF1));
-  elementF1.addEventListener('dblclick', () => handleDoubleClick(elementF1));
-  elementF1.addEventListener('wheel', (e) => handleWheelScroll(e, scrollableContentF1));
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

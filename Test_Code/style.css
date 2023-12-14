@@ -1,7 +1,7 @@
 /* 
 
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 /* 캔버스 시작*/
 .draggable-container {
     position: fixed;
@@ -84,32 +84,79 @@
     display: none;
   }
 
-  /* 외부 링크 로고*/
-  .instagram {
-    width: 50px;
-    height: 50px;
-  }
 
-  .github {
-    width: 50px;
-    height: 50px;
-  }
-
-  .obsidian {
-    width: 70px;
-    height: 70px;
-  }
-  /*외부 링크 로고 끝*/
-
+/* 외부 링크 테이블*/
   .logo_table {
     width: 100%;
+    font-family: 'Roboto', sans-serif;
   }
 
-  .logo_table .td1 {
+  .logo_table_td1 {
     width: 10%;
     text-align: center;
   }
 
-  .logo_table td{
-    border: 2px solid black;
-  }
+
+    /* 외부 링크 로고*/
+    .instagram {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .github {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .obsidian {
+      width: 70px;
+      height: 70px;
+    }
+    /*외부 링크 로고 끝*/
+
+/*  외부 링크 테이블 끝*/
+
+/* 언어 소개 테이블 */
+.Lang_table {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Lang_table_td1 {
+  text-align: center;
+  width: 10%;
+}
+
+.java {
+  width: 50px;
+  height: 50px;
+}
+
+.java_text {
+  text-align: left;
+}
+
+.programmers {
+  width: 140px;
+  height: 50px;
+}
+
+.javascript {
+  width: 50px;
+  height: 50px;
+}
+
+.oracledb {
+  width: 40px;
+  height: 40px;
+}
+
+.nodejs {
+  width: 40px;
+  height: 40px;
+}
+/* 언어 소개 테이블끝*/
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- jQuery 추가 -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+
+    new Crate({
+        server: '1044060390369280081', // DECENT
+        channel: '1044060390843220070' // #일반
+    })
+
+    $().ready(function () {
+    $("#alertStart").click(function () {
+        Swal.fire({
+            icon: 'success',                         // Alert 타입
+            title: 'Alert가 실행되었습니다.',         // Alert 제목
+            text: '이곳은 내용이 나타나는 곳입니다.',  // Alert 내용
+        });
+    });
+
+    $().ready(function () {
+      $("#github").click(function () {
+        Swal.fire({
+  title: "깃허브 유저 이름을 입력하시오.",
+  input: "text",
+  inputAttributes: {
+    autocapitalize: "off"
+  },
+  showCancelButton: true,
+  confirmButtonText: "확인",
+  showLoaderOnConfirm: true,
+
+  preConfirm: async (login) => {
+    try {
+      const githubUrl = `https://api.github.com/users/${login}`;
+      const response = await fetch(githubUrl);
+
+      if (!response.ok) {
+        return Swal.showValidationMessage(`${JSON.stringify(await response.json())}`);
+      }
+      return response.json();
+    } catch (error) {
+      Swal.showValidationMessage(`Request failed: ${error}`);
+    }
+  },
+  allowOutsideClick: () => !Swal.isLoading()
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire({
+      title: `${result.value.login}아바타 입니다`,
+      imageUrl: result.value.avatar_url
+    });
+  }
+});
+
+      });
+    });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+  
+</script>
+</head>
+<body>
+  <iframe src="https://discord.com/widget?id=1044060390369280081&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  
+  <a id="alertStart">Alert 실행</a>
+  <a id="github">깃허브 버튼</a>
+</body>
+</html>

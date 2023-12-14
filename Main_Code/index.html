@@ -6,6 +6,13 @@
   <link rel="shortcut icon" type="image/x-icon" href="picture/Samdasoo.png">
   <title>자기 소개</title>
   <link rel="stylesheet" href="style.css">
+  <!-- jQuery 추가 -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- sweet alert2-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  <script src="script.js"></script>
+  <script src="event.js"></script>
 </head>
 <body>
 
@@ -19,33 +26,40 @@
       
     </div>
   </div>
+
   <div class="draggable f1" id="f1Element" draggable="true"> <a>이지민</a>
     <div class="scrollable-content" id="scrollableContentF1">
       <!-- 이지민의 표현할 컨텐츠 -->
-      <p>F1 Content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet vestibulum felis. In hac habitasse platea dictumst.</p>
-      <p>Integer sed tristique ligula. Vestibulum aliquam euismod velit vitae interdum. Donec sit amet magna a augue lobortis efficitur.</p>
-      <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
-      <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
-      <p>Quisque in odio at mi fringilla scelerisque. Sed nec dui vel tortor fermentum finibus. Nullam ut neque eu nisi suscipit pharetra.</p>
+      <table class="Lang_table"> 
+        <tr>
+            <td class="Lang_table_td1"><a><img src="picture/java.png" class="java" id="java"></a></td>
+            <td class="java_text"><img src="picture/programmers.png" class="programmers" id="programmers"> 주로 자바로 풀었습니다 </td>
+        </tr>
 
+        <tr>
+            <td class="Lang_table_td1"><a><img src="picture/javascript.png" class="javascript"></a></td>
+            <td class="javascript_text"><img src="picture/ORACLEDB.png" class="oracledb"><img src="picture/nodejs.png"class="nodejs"> 등을 활용하여 블럭 깨기 게임을 제작해봤습니다.</td>
+        </tr>
+      </table>
     </div>
   </div>
-  <div class="draggable f2" id="f2Element" draggable="true"> <a>외부 링크</a>
+
+  <div class="draggable f2" id="f2Element" draggable="true"> <a>외부 링크 &nbsp;로고 클릭시 이동합니다.</a>
     <div class="scrollable-content" id="scrollableContentF2">
       <!-- 외부링크의 표현할 컨텐츠 -->
       <table class="logo_table">
         <tr>
-          <td class="td1"><a href = "https://www.instagram.com/leejimin2134/"><img src = "picture/instagram.png" class ="instagram"></a></td>
+          <td class="logo_table_td1"><a href = "https://www.instagram.com/leejimin2134/"><img src = "picture/instagram.png" class ="instagram"></a></td>
           <td><p class="instagram_text">인스타 주소입니다.</p></td>
           </tr>
 
           <tr>
-          <td class="td1"><a href = "https://github.com/Samdasoo1076"><img src="picture/github.png" class ="github"></a></td>
+          <td class="logo_table_td1"><a href = "https://github.com/Samdasoo1076"><img src="picture/github.png" class ="github"></a></td>
           <td><p class="github_text">제가 했던 작업물들을 올리는 곳입니다.</p></td>
           </tr>
 
           <tr>
-            <td class="td1"><a href = "https://github.com/Samdasoo1076/Obsidian"><img src ="picture/obsidian.png" class ="obsidian"></a></td>
+            <td class="logo_table_td1"><a href = "https://github.com/Samdasoo1076/Obsidian"><img src ="picture/obsidian.png" class ="obsidian"></a></td>
             <td><p class="obsidian_text">꾸준히 개발일지를 올리는 중입니다.</p></td>
           </tr>
         </table>
@@ -62,6 +76,7 @@
      
     </div>
   </div>
+
   <div class="draggable f3" id="f3Element" draggable="true"><a>본문</a>
     <div class="scrollable-content" id="scrollableContentF3">
       <!-- 본문에 표현할 컨텐츠 -->
@@ -75,7 +90,6 @@
   </div>
 </div>
 
-<script src="script.js"></script>
 
 </body>
 </html>

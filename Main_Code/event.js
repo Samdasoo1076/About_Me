@@ -10,6 +10,15 @@ $(function () {
         });
     });
 
-    
+    $("#javascript").click(function () {
+        
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "잘 찾으셨어요!",
+            showConfirmButton: false,
+            timer: 1500
+          });
+    });
 });
 

@@ -55,7 +55,7 @@ function handleDoubleClick(targetElement) {
   offsetY = 0;
 }
 /* 
- 더블 클릭시 사용자가 재배치 할수 있게 초기화함
+ 더블 클릭시 사용자가 재배치 하게 초기화함
 */
 
 function handleWheelScroll(e, targetScrollableContent) {

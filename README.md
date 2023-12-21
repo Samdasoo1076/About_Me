@@ -17,8 +17,5 @@
 사용 IDE
 ===========
 <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=black">
-Link: [옵시디언][googlelink]
 
-Link: [Google][link]
-
-[link]: [https://google.com](https://github.com/Samdasoo1076/Obsidian/tree/main/%EC%9E%90%EA%B8%B0%20%EC%86%8C%EA%B0%9C%20%EC%82%AC%EC%9D%B4%ED%8A%B8)https://github.com/Samdasoo1076/Obsidian/tree/main/%EC%9E%90%EA%B8%B0%20%EC%86%8C%EA%B0%9C%20%EC%82%AC%EC%9D%B4%ED%8A%B8
+[옵시디언](https://github.com/Samdasoo1076/Obsidian/tree/main/%EC%9E%90%EA%B8%B0%20%EC%86%8C%EA%B0%9C%20%EC%82%AC%EC%9D%B4%ED%8A%B8)

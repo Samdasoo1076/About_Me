@@ -20,8 +20,7 @@
 
 사용 IDE
 ===
-<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=black"><img src="![image](https://github.com/Samdasoo1076/About_Me/assets/84221209/35520ec9-74cf-4b1a-9520-6a15c1071c42)
-">
+<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=black"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsweetalert2.github.io%2F&psig=AOvVaw2o-t8Q69V4GJCj5wrdbmYD&ust=1703223979108000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKjrn4nqn4MDFQAAAAAdAAAAABAD">
 
 
 개발일지는

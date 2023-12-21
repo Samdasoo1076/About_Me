@@ -15,12 +15,12 @@
 
 사용 라이브러리
 ===
-<img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=black">
+<img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=black"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png">
 
 
 사용 IDE
 ===
-<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=black"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsweetalert2.github.io%2F&psig=AOvVaw2o-t8Q69V4GJCj5wrdbmYD&ust=1703223979108000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKjrn4nqn4MDFQAAAAAdAAAAABAD">
+<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=black">
 
 
 개발일지는

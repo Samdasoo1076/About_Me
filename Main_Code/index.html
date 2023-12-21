@@ -11,7 +11,16 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- sweet alert2-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  
+    <!-- discord 라이브러리 추가-->
+   <script src="https://discord.com/api/guilds/1187272101929947277/widget.json"></script>
+   <!-- discord 위젯봇 추가-->
+   <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '1187272101929947277', // 이지민 디스코드
+        channel: '1187272101929947283' // 일반
+    })
+    crate.toggle(false) // 위젯 초기 상태 설정
+   </script>
     <script src="event.js"></script>
 </head>
 <body>
@@ -39,6 +48,11 @@
             <td class="Lang_table_td1"><a><img src="picture/javascript.png" class="javascript" id="javascript"></a></td>
             <td class="javascript_text"><img src="picture/ORACLEDB.png" class="oracledb"><img src="picture/nodejs.png"class="nodejs"> 등을 활용하여 블럭 깨기 게임을 제작해봤습니다.</td>
         </tr>
+
+        <tr>
+
+            <td><img src="https://img.shields.io/badge/filezilla-BF0000?style=for-the-badge&logo=filezilla&logoColor=red"></td>
+        </tr>
       </table>
     </div>
   </div>
@@ -47,8 +61,8 @@
       <!-- 외부링크의 표현할 컨텐츠 -->
       <table class="logo_table">
         <tr>
-          <td class="td1"><a href = "https://www.instagram.com/leejimin2134/"><img src = "picture/instagram.png" class ="instagram"></a></td>
-          <td><p class="instagram_text">인스타 주소입니다.</p></td>
+          <td class="td1"><a href = "https://github.com/Samdasoo1076/Obsidian"><img src ="picture/obsidian.png" class ="obsidian"></a></td>
+            <td><p class="obsidian_text">꾸준히 개발일지를 올리는 중입니다.</p></td>
           </tr>
 
           <tr>
@@ -57,8 +71,8 @@
           </tr>
 
           <tr>
-            <td class="td1"><a href = "https://github.com/Samdasoo1076/Obsidian"><img src ="picture/obsidian.png" class ="obsidian"></a></td>
-            <td><p class="obsidian_text">꾸준히 개발일지를 올리는 중입니다.</p></td>
+            <td class="td1"><a href = "https://www.instagram.com/leejimin2134/"><img src = "picture/instagram.png" class ="instagram"></a></td>
+          <td><p class="instagram_text">인스타 주소입니다.</p></td>
           </tr>
         </table>
 
